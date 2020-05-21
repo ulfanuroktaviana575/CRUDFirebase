@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/bar_activity"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_below="@id/toolbar"
+        android:orientation="vertical"
+        android:padding="16dp" >
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="400dp"
+            android:inputType="textEmailAddress"
+            android:hint="Email"
+            app:met_floatingLabel="normal" />
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:inputType="textPassword"
+            android:hint="Password"
+            app:met_floatingLabel="normal" />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="login"
+            android:id="@+id/btn_login"
+            android:background="@color/colorPrimaryDark"
+            android:textColor="#ffff"/>
+
+        <Button
+            android:id="@+id/btn_registrasi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Registrasi"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/hahha"
+            android:background="@color/colorPrimaryDark"
+            android:textColor="@android:color/black"
+            />
+
+    </LinearLayout>
+
+</RelativeLayout>
